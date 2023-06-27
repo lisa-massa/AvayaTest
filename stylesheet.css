@@ -1,0 +1,50 @@
+.image {
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+#videoBG {
+    display: inline;
+    position: fixed;
+    z-index: 1;
+    object-fit: cover;
+}
+
+#video {
+    height: 100%;
+    width: 100%;
+    /* z-index: -1; */
+    object-fit: cover;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #videoBG {
+        width: 100%;
+        height: 100%;
+    }
+    .image {
+       position: absolute;
+       top: 50%;
+       left: 25%;
+    }
+}
+
